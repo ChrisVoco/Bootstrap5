@@ -13,46 +13,67 @@
     <title>Chris Valge - the Wargod</title>
   </head>
   <body>
-    <div class="container my-5">
-      <h2>normal container</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
-        excepturi ab molestias unde eaque totam aut eligendi cum expedita alias.
-        Quis nostrum unde repellendus ipsum cumque sunt similique, dignissimos
-        officia?
-      </p>
-    </div>
-
-    <div class="container-fluid">
-      <h2>fluid container</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque,
-        quibusdam dolorem sapiente aspernatur modi, voluptate amet quasi impedit
-        velit, porro sed libero quo eaque! At incidunt magnam repudiandae
-        molestiae nulla?
-      </p>
+    <div class="container-lg my-5">
+      <h2>basic grid</h2>
+      <div class="row">
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
     </div>
 
     <div class="container-lg my-5">
-      <h2>100% width until lg screen, then container</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in, unde
-        praesentium aliquid quia quaerat, tempore itaque totam explicabo
-        cupiditate omnis repudiandae commodi excepturi. Perferendis,
-        consequuntur numquam. In, atque praesentium!
-      </p>
+      <h2>column widths</h2>
+      <div class="row">
+        <div class="col-6">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
     </div>
 
-    <div class="container-xl my-5">
-      <h2>100% width until xl screens, then container</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-        consequatur molestiae enim eaque sed illo facilis ratione dolorum, quod
-        aliquam atque quidem unde, ad, fugit quis saepe suscipit blanditiis!
-        Commodi.
-      </p>
+    <div class="container-lg my-5">
+      <h2>responsive column widths</h2>
+      <div class="row gy-3">
+        <!-- manually change gutter using g{d}-{n} -->
+        <div class="col-sm-4 col-lg-6">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-sm-4 col-lg-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-sm-4 col-lg-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
     </div>
 
+    <div class="container-lg my-5">
+      <h2>justifying columns</h2>
+      <div class="row justify-content-center">
+        <!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
