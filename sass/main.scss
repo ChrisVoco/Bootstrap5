@@ -1,23 +1,22 @@
-
 @import "../node_modules/bootstrap/scss/functions";
 
 $primary: #c29938;
 $light: #fbf5e5;
 
 $custom-theme-colors: (
-    "altlight": #f2ebfa,
-    "altdark": #522192,
+  "altlight": #f2ebfa,
+  "altdark": #522192,
+  "varv1": #f4e3b8,
 );
-
 @import "../node_modules/bootstrap/scss/variables";
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.offcanvas { 
-  z-index: 1051 !important; 
+.offcanvas {
+  z-index: 1051 !important;
 }
-.offcanvas-backdrop { 
-  z-index: 1050 !important; 
+.offcanvas-backdrop {
+  z-index: 1050 !important;
 }
